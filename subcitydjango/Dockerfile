@@ -2,6 +2,6 @@ FROM python:2
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /code
 WORKDIR /code
-ADD . /code/
-RUN pip install -r new.subcity.org/requirements.txt
+ADD new.subcity.org/requirements.txt /code/
+RUN pip install -r requirements.txt
 EXPOSE 8000
